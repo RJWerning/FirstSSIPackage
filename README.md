@@ -75,3 +75,34 @@
 		If you drag the Data Flow Task to Control Flow on the designer, it drops a Data Flow Task component.
 			Double click on this component, it changes the designer tab to "Data Flow"
 			It also changes the SSIS Toolbox components that are available for that part of the package.
+
+## Demo: Developing the Flow of data
+	ETL - Extract, Transform, and Load
+	
+	Rename the "Data Flow Task" to "Importing the products"
+	Change to 'Data Flow' tab
+		In the left toolbox > Other Sources > Flat File Source - drag & drop on canvas
+		Rename to 'Product csv'
+		Double click, create the connection and select the product.csv files
+		
+		In the left toolbox > Other Destinations > OLD DB Destination - drag & drop on canvas
+		Rename to 'Products table'
+		
+		Drag Source Blue Arrow (Flow through, red is Error) to Destination
+		Destination has a red X on it, means that it's not configured correctly
+		
+		Double click destination, select Connection Manager > New
+			Server Name: .  (means LocalHost)
+			Select or enter a database name: AdvWrk17
+		
+		Destination Editor:
+			OLE DB connection mananger: LocalHost.AdvWrk17
+			Data access mode: Table or view
+			Name of the table: 
+				If the table doesn't already exist, click New
+				This will give you a script that you can run in SQL Server Mgmnt Studio, create table then..
+				Set the table name
+			Verify the mappings
+			
+		Right click on the canvas > Execute Task - 77 rows inserted
+		
