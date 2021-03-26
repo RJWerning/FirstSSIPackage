@@ -2,13 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>BuildingOurFirstSSISPackage</Name>
-    <LastWriteTime>2021-03-25T18:39:24.7685569Z</LastWriteTime>
+    <LastWriteTime>2021-03-26T13:02:24.5932726Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>FirstSSISPackage.dtsx</Name>
-      <LastWriteTime>2021-03-25T18:39:24.7435565Z</LastWriteTime>
+      <Name>ImportCSV.dtsx</Name>
+      <LastWriteTime>2021-03-26T12:59:09.0313152Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package1.dtsx</Name>
+      <LastWriteTime>2021-03-25T19:47:49.4904465Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

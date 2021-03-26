@@ -150,4 +150,28 @@
 	To share variables, create Project.params
 		SourceDB: String > AdvWrk17
 		SourceServer: String > . (local host, but could Dev, Qa etc)
-		
+
+### Using Project Parameters in Expressions
+	Project Parameters: Shared area for parameters, packages in a project can use the same parameters. Execution of package can change the parameters before execution.
+	
+### Demo: Using Project Parameters in Expressions
+	Open ImportCSV.dtsx > Data Flow tab > click on DB (AdvWrk17) in Connection Manager
+	Now look at object explorer "Properties" - Expressions property > Click on ellipse
+	Opens the Property Expressions Editor > Property - select Initial Catalog.
+	Click on Expression - opens Expression Builder, allows you to select from Project Parameters
+		Drag Project Parameter "SourceDB" to the Expression edit memo > @[$Project::SourceDB]
+		Click on 'Evaluate Expression' to confirm the value 
+	Do the same thing for 'ServerName', selecting Project Param "SourceServer"
+	
+** Left off at Creating the Catalog **
+  Watched vid but stopped taking detailed notes, looks like I'll be on the OCR project after R&R. 
+  Everything about this feels very familiar, like any normal IDE
+  
+  Integration Services Catalog setup in SqlServer - watch the vid & take notes, need CLR enabled
+	sets up the SSISDB database
+	
+  Deploying (project) to Catalog 
+	Deploys the project(s) we created to Sql Server Database, adding it to the Integration Services Catalog
+	In SSMS (SQL Srvr Mgmnt Studio), it now appears in the catalog where it can be executed from
+	
+  
