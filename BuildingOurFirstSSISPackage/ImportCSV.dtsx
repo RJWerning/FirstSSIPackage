@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{B4957B85-FC5A-4C4F-945F-D47FE58CD8A0}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{53378BD2-08B4-49BE-BF1B-97E8594EB811}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -126,138 +126,27 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.AdvWrk17]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{629A9D79-CAC3-404A-A08C-2D303CC077DA}"
-      DTS:ObjectName="LocalHost.AdvWrk17">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=AdvWrk17;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Product.csv]"
-      DTS:CreationName="FLATFILE"
-      DTS:Description="Product.csv"
-      DTS:DTSID="{2415DF57-8820-4B3E-9F1A-64B5580704EB}"
-      DTS:ObjectName="Product.csv">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Development\FirstSSISPackage\BuildingOurFirstSSISPackage\Products.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductID"
-              DTS:DTSID="{E3955488-4E12-4BFC-9181-3DE5C11A5963}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductName"
-              DTS:DTSID="{67847629-08C3-4C62-8515-0D4B2DAD14DF}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="SupplierID"
-              DTS:DTSID="{FDD5F18A-A490-4FDD-8B75-7BE812C09AA5}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CategoryID"
-              DTS:DTSID="{C909DD9D-539C-4EF9-990B-F66802F9EB24}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="QuantityPerUnit"
-              DTS:DTSID="{2B7CBB18-F06F-4DAB-BC78-D963F4D97575}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="UnitPrice"
-              DTS:DTSID="{5E0A584E-7B34-4AA0-8A20-A8D3BFA30985}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="UnitsInStock"
-              DTS:DTSID="{DD2CE0C9-3E1F-478D-90A2-2A56D758DC76}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="UnitsOnOrder"
-              DTS:DTSID="{4F5C0CE6-3CBF-41A8-8845-1CD603109D28}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ReorderLevel"
-              DTS:DTSID="{2E853D14-9882-4D09-9CE8-C07143A12808}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Discontinued"
-              DTS:DTSID="{52D46D48-5A48-4CAC-BBE2-6517DB8746FB}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{72F69F43-6240-4545-8ACC-2227EEBA038A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ErrorCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Importing the products"
+      DTS:refId="Package\Import Products"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{793E0EA1-2E8C-4F54-BCDC-8031EB366314}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Importing the products"
+      DTS:ObjectName="Import Products"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -265,7 +154,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Importing the products\Product csv"
+              refId="Package\Import Products\Product csv"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
@@ -285,25 +174,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Importing the products\Product csv.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Product.csv]"
-                  connectionManagerRefId="Package.ConnectionManagers[Product.csv]"
+                  refId="Package\Import Products\Product csv.Connections[FlatFileConnection]"
+                  connectionManagerID="{2415DF57-8820-4B3E-9F1A-64B5580704EB}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Products]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output]"
+                  refId="Package\Import Products\Product csv.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]"
                       name="ProductID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -318,14 +207,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]"
                       name="ProductName"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -340,14 +229,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]"
                       name="SupplierID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -362,14 +251,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]"
                       name="CategoryID"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -384,14 +273,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
                       name="QuantityPerUnit"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -406,14 +295,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]"
                       name="UnitPrice"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -428,14 +317,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]"
                       name="UnitsInStock"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -450,14 +339,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
                       name="UnitsOnOrder"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -472,14 +361,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]"
                       name="ReorderLevel"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -494,14 +383,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]"
                       codePage="1252"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
+                      externalMetadataColumnId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
                       length="50"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]"
                       name="Discontinued"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -519,61 +408,61 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="ProductID" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="ProductName" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="SupplierID" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CategoryID" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="QuantityPerUnit" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="UnitPrice" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="UnitsInStock" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="UnitsOnOrder" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="ReorderLevel" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -581,27 +470,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output]"
+                  refId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1252"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -610,7 +499,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Importing the products\Products table"
+              refId="Package\Import Products\Products table"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
@@ -667,159 +556,159 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Importing the products\Products table.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.AdvWrk17]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.AdvWrk17]"
+                  refId="Package\Import Products\Products table.Connections[OleDbConnection]"
+                  connectionManagerID="{629A9D79-CAC3-404A-A08C-2D303CC077DA}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AdvWrk17]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input]"
+                  refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[ProductID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ProductID"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[ProductName]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[ProductName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ProductName"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[SupplierID]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[SupplierID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="SupplierID"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[CategoryID]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[CategoryID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CategoryID"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[QuantityPerUnit]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[QuantityPerUnit]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="QuantityPerUnit"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="UnitPrice"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[UnitsInStock]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[UnitsInStock]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="UnitsInStock"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[UnitsOnOrder]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[UnitsOnOrder]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="UnitsOnOrder"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[ReorderLevel]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[ReorderLevel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ReorderLevel"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]" />
                     <inputColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].Columns[Discontinued]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].Columns[Discontinued]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Discontinued"
-                      externalMetadataColumnId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
-                      lineageId="Package\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]" />
+                      externalMetadataColumnId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
+                      lineageId="Package\Import Products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="ProductID" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="ProductName" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="SupplierID" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="CategoryID" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="QuantityPerUnit" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="UnitPrice" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="UnitsInStock" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="UnitsOnOrder" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
                       codePage="1252"
                       dataType="str"
                       length="50"
                       name="ReorderLevel" />
                     <externalMetadataColumn
-                      refId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
+                      refId="Package\Import Products\Products table.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
                       codePage="1252"
                       dataType="str"
                       length="50"
@@ -829,22 +718,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Importing the products\Products table.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Import Products\Products table.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Import Products\Products table.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Importing the products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Import Products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Importing the products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Import Products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Importing the products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Import Products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Importing the products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Import Products\Products table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -855,10 +744,10 @@
           </components>
           <paths>
             <path
-              refId="Package\Importing the products.Paths[Flat File Source Output]"
-              endId="Package\Importing the products\Products table.Inputs[OLE DB Destination Input]"
+              refId="Package\Import Products.Paths[Flat File Source Output]"
+              endId="Package\Import Products\Products table.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
-              startId="Package\Importing the products\Product csv.Outputs[Flat File Source Output]" />
+              startId="Package\Import Products\Product csv.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -877,27 +766,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="188,42"
-          Id="Package\Importing the products"
+          Size="155,42"
+          Id="Package\Import Products"
           TopLeft="46,45" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Importing the products">
+    design-time-name="Package\Import Products">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="133,42"
-          Id="Package\Importing the products\Product csv"
-          TopLeft="73,72" />
-        <NodeLayout
           Size="146,42"
-          Id="Package\Importing the products\Products table"
+          Id="Package\Import Products\Products table"
           TopLeft="85,168" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Import Products\Product csv"
+          TopLeft="73,72" />
         <EdgeLayout
-          Id="Package\Importing the products.Paths[Flat File Source Output]"
+          Id="Package\Import Products.Paths[Flat File Source Output]"
           TopLeft="139.5,114">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -934,7 +823,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Importing the products\Products table">
+    design-time-name="Package\Import Products\Products table">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

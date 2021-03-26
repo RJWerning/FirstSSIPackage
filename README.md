@@ -105,4 +105,49 @@
 			Verify the mappings
 			
 		Right click on the canvas > Execute Task - 77 rows inserted
+
+## Chapter 3: Managing SSIS Projects
+
+### Introduction
+	Managing SSIS Projects
+	Sharing connections between packages
+	Using project parameters in expressions
+	Creating the catalog
+	Deploying to catalog
+	
+### Managing SSIS Projects
+	Projects: Can share information with packages
+		Projects are a way to organize packages that you're writing in Integration Services
+	Connections: Connects not created in package
+	Parameters: Use variables in package only when necessary
+	
+	Solution - Top Level
+	Solution has Projects
+	Projects have Packages
+	
+	The reason we create this project and solution is that it can enable source control so developers can check in and out the code and share betwen developers.
+	
+	The package is really inside a container which is in the project, and this is where the power comes with the connections and parameters.
+	We can use the parameters in expressions for different objects in our SSIS package.
+
+### Demo: Single packages with variables and connections
+	Connections within 1 package are not available in other packages
+	Variables within 1 package are not available in other packages
+	Consider the scoping of variables, sometimes it makes sense to have their own variables
+	Can also have a parent package where the variables exist and pass them to child packages
+
+### Sharing Connections between packages
+	Connection Manager: Shared area for connections that all source and destination components depend on. Packages in a project can use the same connections.
+	You can move connections from a package to the project
+		Use good naming conventions when doing this
+		Right click on Package level Connection Mananger > Convert to Project Connection
+		
+	You can use the connection manager when you deploy to switch between Dev, QA, Prod etc.
+	
+### Demo: Sharing connections between projects
+	Converted Products & AdvWrk17 to Project connections
+	
+	To share variables, create Project.params
+		SourceDB: String > AdvWrk17
+		SourceServer: String > . (local host, but could Dev, Qa etc)
 		
